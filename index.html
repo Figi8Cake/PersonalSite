@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<script src="js/script.js"></script>
+<style>
+    .navbar {
+      overflow: hidden;
+      background-color: rgba(51, 51, 51, 0);
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+    
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 24px 20px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.452);
+      color: black;
+    }
+    
+    /* Active/current link */
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+    @media (max-width: 767px) {
+            .navbar img {
+              display: none;
+            }
+          }
+          
+    .navbar img {
+      float: right;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 70%;
+    }
+    body {
+    text-align: center;
+    background: rgb(73, 73, 73);
+    background: linear-gradient(to top right, rgb(213, 245, 255), rgb(0, 68, 100));
+    background-size: 100% 5000px;
+    background-repeat: no-repeat;
+}
+input {
+        height: 40px;
+        margin-bottom: 10px;
+        width: 95%;
+        border-radius: 12px;
+    }
+.Animals {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-between
+}
+.Button {
+    display: unset;
+    font-size: 20px;
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    padding: 25px;
+    margin-top: 10px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: rgb(255, 248, 147);
+}
+body h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 1px 0 #999, 
+                0 2px 0 #999999,
+                0 3px 0 #888,
+                0 4px 0 #898989,
+                0 5px 0 #777,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);
+        width: 100%;
+        font-size: 60px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    body h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 1px 0 #999, 
+                0 2px 0 #999999,
+                0 3px 0 #888,
+                0 4px 0 #898989,
+                0 5px 0 #777,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+</style>
+
+<html>
+    <head>
+        <title>Jake's Site</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="/" class="active">Search Bar</a>
+            <img src="assets/fig1-1-676x336.png" style="width:70px;height: 70px;">
+          </div>
+        <input id="searchbar" onkeyup="myFunction()" type="text"
+        name="search" placeholder="Search Animals...">
+        <span id="topbar">
+            <h1>Jake's Site</h1>
+        </span>
+        <div class="Animals">
+            <ul id="myUL">
+                <button style="background-image: url(assets/images.jpg); color: white;" class="Button" onclick="hippo()"><p>Hippo</p></button>
+                <button style="background-image: url(assets/images\ \(1\).jpg); color: white;" class="Button"><p>Giraffe</p></button>
+                <button style="background-image: url(assets/download\ \(1\).jpg); color: white;" class="Button"><p>Panda</p></button>
+                <button style="background-image: url(assets/pexels-mali-maeder-110820-1280x720.png); color: white; background-position: center; background-size: cover;" class="Button"><p>Pig</p></button>
+                <button style="background-image: url(assets/3908a505-ad76-4948-8652-1035b26051d3.jpg); color: white; background-size: cover;" class="Button"><p>Elephant</p></button>
+                <button style="background-image: url(assets/picture-of-golden-retriever-dog_0.webp); color: white; background-size: cover;" class="Button"><p>Dog</p></button>
+                <button style="background-image: url(assets/photo-1598755257130-c2aaca1f061c.jpg); color: white; background-size: cover;" class="Button" onclick="zebra()"><p>Zebra</p></button>
+            </ul>
+        </div>
+    </body>
+</html>
